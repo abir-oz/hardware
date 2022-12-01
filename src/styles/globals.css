@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+li:hover>.hover-border::before {
+  right: 0;
+}
+
+
+.hover-border::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  height: 4px;
+  background-color: #004a81;
+  transition: .3s ease-in-out;
+  transition-property: background-color, border-color, box-shadow, height, left, right, opacity;
+  left: 0;
+  right: 100%;
+}
+
+.bg-image {
+  background-image: url("https://www.nke.at/templates/yootheme/cache/a6/istock-1139469336_1-a636a831.webp");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
