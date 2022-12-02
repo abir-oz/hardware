@@ -1,8 +1,32 @@
+import { useEffect, useState } from 'react';
 import { whyChooseUs } from '../data/dummy';
 
 const WhyUs = () => {
+
+    // background image position change on scroll
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <section className='m-3 md:mx-48'>
+        <section className='p-3 md:px-48  my-24'
+            style={{
+                backgroundImage: "url('https://www.nke.at/templates/yootheme/cache/22/kreis-element-22cb7781.webp')",
+                backgroundSize: "600px 600px",
+                backgroundPositionX: `calc(-12% + ${scrollPosition / 10}px)`,
+                backgroundRepeat: "no-repeat"
+            }}
+        >
             <div className='flex flex-wrap justify-evenly'>
                 {
                     whyChooseUs.map((item, index) => (
@@ -21,7 +45,7 @@ const WhyUs = () => {
                     ))
                 }
             </div>
-        </section>
+        </section >
     );
 };
 

@@ -47,3 +47,17 @@ li:hover>.hover-border::before {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+
+.swiper-button-disabled,
+.swiper-button-disabled:hover {
+  color: #000 !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  width: 6rem;
+}
+
+.testimonials.swiper-pagination-bullet-active {
+  background-color: aliceblue;
+}

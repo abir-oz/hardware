@@ -1,13 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import { useState } from 'react';
 import { menuItems, topBarItems } from '../data/dummy';
 
 const NavBar = () => {
+
+    // onscroll down navbar will be fixed
+    const [scroll, setScroll] = useState(false);
+
+
     return (
         <header className="">
             {/* Top Bar */}
-            <div className="flex border-t-[6px] border-yellow-400 px-40">
+            <div className="flex border-t-[6px] border-yellow-400 px-40 ">
                 <Link href={"/"} className="-mt-1.5 px-1 bg-white">
                     <Image
                         src="https://www.nke.at/templates/yootheme/cache/69/logo_neu-699b02e3.webp"
@@ -32,12 +37,12 @@ const NavBar = () => {
             <nav className="pt-5 ml-40">
                 <ul className="flex items-center gap-x-8">
                     {menuItems.map((item, index) => (
-                        <li className="inline-block relative" key={index}>
+                        <li className="inline-block relative p-3" key={index}>
                             <Link
                                 href="/"
-                                className="flex justify-center items-center min-h-[40px] text-base font-medium hover-border"
+                                className="flex justify-center items-center min-h-[40px] hover-border"
                             >
-                                <span className="inline-flex">{item.icon}</span>
+                                <span className="inline-flex text-xl">{item.icon}</span>
                                 <span className="inline-flex hover:text-blue-800">{item.name === "Home" ? "" : item.name}</span>
                             </Link>
                         </li>

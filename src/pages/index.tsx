@@ -11,7 +11,8 @@ import LatestNews from "../components/LatestNews";
 import LetUsRolling from "../components/LetUsRolling";
 import NavBar from "../components/NavBar";
 import ProductCarousel from "../components/ProductCarousel/ProductCarousel";
-import TestimonialCarousel from "../components/TestimonialCarousel";
+import TestimonialCarousel from "../components/Testimonials/TestimonialCarousel";
+import WhatWeDo from "../components/WhatWeDo";
 import WhyUs from "../components/WhyUs";
 import YoutubeVideos from "../components/Youtube";
 
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
       <NavBar />
       <main>
         <Hero />
+        <WhatWeDo />
         <ProductCarousel />
         <WhyUs />
         <LetUsRolling />

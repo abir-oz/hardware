@@ -82,6 +82,95 @@ export const productCarousel = [
         id: 3,
         title: "Bearings for conveyor belts",
         description: "One of the most vital parts of the rollers/idlers in the conveyor belts are the bearings.",
-        image: "https://www.nke.at/templates/yootheme/cache/cd/F%C3%B6rderb%C3%A4nder-cd2f3a91.webp",
+        image: "https://www.nke.at/templates/yootheme/cache/49/Inch_Size_2_rgb-49faaca0.webp",
     }
 ];
+
+
+export const moreAboutNke = [
+    {
+        id: 1,
+        title: 'History',
+        link: '/history',
+    },
+    {
+        id: 2,
+        title: 'Quality Process and Certifications',
+        link: '/quality-process-and-certifications',
+    },
+    {
+        id: 3,
+        title: 'News',
+        link: '/news',
+    },
+    {
+        id: 4,
+        title: 'Training Courses & Seminars',
+        link: '/training-courses-and-seminars',
+    },
+    {
+        id: 5,
+        title: 'Distributors Worldwide',
+        link: '/distributors-worldwide',
+    },
+    {
+        id: 6,
+        title: 'Career',
+        link: '/career',
+    }
+];
+
+export const testiMonials = [
+    {
+        id: 1,
+        name: 'Michael Rößl',
+        designation: 'Applications Engineer',
+        title: '"What drives me is the agile, innovative and flexible culture at NKE. There is the chance to make a real impact!"',
+        description: "Throughout my employment at NKE I've worked within dynamic collaborative teams on challenging, innovative, long-term projects in the worldwide acting FERSA Group. In general, as Application Engineer I'm working at the gateway between industrial economics and engineering. I'm challenged and at the same time highly motivated to find new innovative solutions to solve problems related to the bearing industry. From the very beginning, I got the chance to take over responsibility and contribute to the company's success.",
+        image: 'https://www.nke.at/templates/yootheme/cache/89/Michael_R%C3%B6ssl_NKE_rgb-898565ea.webp',
+    },
+    {
+        id: 2,
+        name: 'Adis Guso',
+        designation: 'Employees Manufacturing & Production',
+        title: 'I am proud to be part of such a great CMS team with great work colleagues!',
+        description: "I joined NKE in 2018 following a recommendation through a foundation programme. Supported by my manager and a lot of initiative, I have already achieved a lot.For me, NKE is a very friendly \" family company \" - with a top working atmosphere. I am proud to be part of the CMS team, together we have managed to overcome hurdles and increase our efficiency through our team spirit. ",
+        image: 'https://www.nke.at/templates/yootheme/cache/b1/Adis_Guso-b1a0ea47.webp',
+    },
+    {
+        id: 3,
+        name: 'Veronika Krempl',
+        designation: 'Head of Information Management',
+        title: 'Joining the NKE 16 years ago was a great opportunity for me.',
+        description: "It was a great opportunity for me to join NKE in 2005. As a trainee during my studies at the University of Applied Sciences in Steyr, I started to contribute my part to the team and today I manage a department and drive NKE forward with digitalisation. Even after so long, I still enjoy coming to the company every day, have fun at work and look forward to working with my colleagues.",
+        image: 'https://www.nke.at/templates/yootheme/cache/1c/Veronika_Krempl-1ce3fc1c.webp',
+    },
+];
+
+
+export const latestNews = [
+    {
+        id: 1,
+        date: "2 December 2022",
+        title: 'NKE Austria is recertified to ISO',
+        image: 'https://www.nke.at/images/news/2022/Bild_1_NKE_ISO.jpg',
+        excerpt: 'Bearing manufacturer NKE Austria GmbH has again passed the ISO audit.',
+        description: '',
+    },
+    {
+        id: 2,
+        date: "2 December 2022",
+        title: 'Bearings from NKE for wind turbine gearboxes and generators',
+        image: 'https://www.nke.at/images/news/2022/Pic_3_NKE_6330-C3-HYB_1500px_72dpi_1.png',
+        excerpt: 'NKE Austria GmbH designs and manufactures bearings for wind turbine gearboxes and generators. The bearing solutions were presented at the WindEurope Annual Event in Bilbao, Spain, in April 2022.',
+        description: '',
+    },
+    {
+        id: 3,
+        date: "2 December 2022",
+        title: 'NKE Austria has a new Managing Director',
+        image: 'https://www.nke.at/images/news/2022/Matthias-Ortner-NKE-Austria_300dpi_1500px_WEB_quer.JPG',
+        excerpt: 'Bearing specialist NKE Austria GmbH has a new Managing Director: Matthias Ortner, previously the Deputy Managing Director, was appointed Managing Director of the Steyr-based bearing manufacturer with effect from 2022',
+        description: '',
+    },
+]
