@@ -33,12 +33,10 @@ const CarouselSlider = () => {
                 // swiper.navigation.init();
                 swiper.navigation.update();
             }}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
             className="w-full h-full relative"
         >
             <SwiperSlide className='flex justify-center items-center relative'>
-                <Image src='https://www.nke.at/templates/yootheme/cache/67/maehdrescher_gespiegelt-67219a2f.webp' alt='hero' layout='fill' objectFit='cover' />
+                <Image src='https://www.nke.at/templates/yootheme/cache/67/maehdrescher_gespiegelt-67219a2f.webp' alt='hero' width={1000} height={1000} className="w-full max-h-full" />
                 <div className="absolute bottom-0 left-0 top-0 right-0 p-10 flex gap-4 justify-start items-end">
                     <div className='max-w-md text-white '>
                         <h3 className='text-4xl italic'>
