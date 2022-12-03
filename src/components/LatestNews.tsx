@@ -6,7 +6,7 @@ const LatestNews = () => {
         <div className="my-10">
             <div className="max-w-7xl mx-auto px-12">
                 <h1 className="text-4xl font-bold text-blue-700">Latest News</h1>
-                <div className="flex justify-between mt-6 gap-12">
+                <div className="flex justify-between mt-6 space-x-6">
                     {
                         latestNews.map((news, index) => (
                             <div key={index} className="w-1/3">

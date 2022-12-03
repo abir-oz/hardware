@@ -22,8 +22,8 @@ const CarouselSlider = () => {
             }}
             cssMode={true}
             navigation={{
-                prevEl: prevElRef.current, // Assert non-null
-                nextEl: nextElRef.current, // Assert non-null
+                prevEl: prevElRef.current!, // Assert non-null
+                nextEl: nextElRef.current!, // Assert non-null
             }}
             onBeforeInit={(swiper) => {
                 // @ts-ignore         
@@ -37,7 +37,7 @@ const CarouselSlider = () => {
         >
             <SwiperSlide className='flex justify-center items-center relative'>
                 <Image src='https://www.nke.at/templates/yootheme/cache/67/maehdrescher_gespiegelt-67219a2f.webp' alt='hero' width={1000} height={1000} className="w-full max-h-full" />
-                <div className="absolute bottom-0 left-0 top-0 right-0 p-10 flex gap-4 justify-start items-end">
+                <div className="absolute bottom-0 left-0 top-0 right-0 p-10 flex space-x-4 justify-start items-end">
                     <div className='max-w-md text-white '>
                         <h3 className='text-4xl italic'>
                             We keep your

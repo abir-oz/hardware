@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
 *,
 *::after,
 *::before {
@@ -55,9 +60,34 @@ li:hover>.hover-border::before {
 }
 
 .swiper-pagination-bullet-active {
-  width: 6rem;
+  width: 2rem;
 }
 
 .testimonials.swiper-pagination-bullet-active {
   background-color: aliceblue;
+}
+
+html,
+p {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer,
+footer li a {
+  @apply text-slate-300;
+}
+
+footer a {
+  @apply text-white underline;
 }

@@ -30,7 +30,7 @@ const WhyUs = () => {
             <div className='flex flex-wrap justify-evenly'>
                 {
                     whyChooseUs.map((item, index) => (
-                        <div key={index} className='w-full lg:w-1/2'>
+                        <div key={index} className='lg:w-1/2'>
                             <div className="md:mx-12 my-3 flex flex-col items-center ">
                                 <img src={item.icon}
                                     alt={item.title}

@@ -12,7 +12,7 @@ const NavBar = () => {
     return (
         <header className="">
             {/* Top Bar */}
-            <div className="flex border-t-[6px] border-yellow-400 px-40 ">
+            <div className="flex border-t-[6px] border-yellow-400 lg:px-40 ">
                 <Link href={"/"} className="-mt-1.5 px-1 bg-white">
                     <Image
                         src="https://www.nke.at/templates/yootheme/cache/69/logo_neu-699b02e3.webp"
@@ -21,7 +21,7 @@ const NavBar = () => {
                         height={100}
                     />
                 </Link>
-                <ul className="ml-auto mr-16 mt-6 flex gap-x-12">
+                <ul className="ml-auto mt-6 flex space-x-12">
                     {topBarItems.map((item, index) => (
                         <Link
                             key={index}
@@ -34,8 +34,8 @@ const NavBar = () => {
                     ))}
                 </ul>
             </div>
-            <nav className="pt-5 ml-40">
-                <ul className="flex items-center gap-x-8">
+            <nav className="pt-5 max-w-3xl flex items-center">
+                <ul className="flex items-center space-x-5">
                     {menuItems.map((item, index) => (
                         <li className="inline-block relative p-3" key={index}>
                             <Link
