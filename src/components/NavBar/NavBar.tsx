@@ -1,16 +1,19 @@
+import type { NextComponentType } from "next";
 import Image from 'next/image';
+
 import Link from 'next/link';
 import { useState } from 'react';
-import { menuItems, topBarItems } from '../data/dummy';
+import { menuItems, topBarItems } from '../../data/dummy';
+import DesktopMenu from "./DesktopMenu";
 
-const NavBar = () => {
+const NavBar: NextComponentType = () => {
 
     // onscroll down navbar will be fixed
     const [scroll, setScroll] = useState(false);
 
 
     return (
-        <header className="">
+        <header className="relative">
             {/* Top Bar */}
             <div className="flex border-t-[6px] border-yellow-400 lg:px-40 ">
                 <Link href={"/"} className="-mt-1.5 px-1 bg-white">
@@ -34,21 +37,8 @@ const NavBar = () => {
                     ))}
                 </ul>
             </div>
-            <nav className="pt-5 max-w-3xl flex items-center">
-                <ul className="flex items-center space-x-5">
-                    {menuItems.map((item, index) => (
-                        <li className="inline-block relative p-3" key={index}>
-                            <Link
-                                href="/"
-                                className="flex justify-center items-center min-h-[40px] hover-border"
-                            >
-                                <span className="inline-flex text-xl">{item.icon}</span>
-                                <span className="inline-flex hover:text-blue-800">{item.name === "Home" ? "" : item.name}</span>
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+            {/* @ts-ignore */}
+            <DesktopMenu menuItems={menuItems} />
         </header>
     );
 };

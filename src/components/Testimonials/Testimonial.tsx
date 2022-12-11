@@ -38,10 +38,10 @@ const Testimonial = () => {
         >
             {
                 testiMonials.map((item, index) => (
-                    <SwiperSlide className='py-16' key={index}>
+                    <SwiperSlide className='py-16 px-6 md:px-0' key={index}>
                         <div className="flex flex-col items-center justify-center">
                             <Image src={item.image} alt='hero' width={200} height={200} className='w-52 h-52 rounded-full' />
-                            <div className="max-w-xl text-white flex flex-col space-y-4">
+                            <div className="max-w-xl text-white flex flex-col space-y-4 text-justify">
                                 <h3 className='text-2xl italic font-bold'>
                                     {item.title}
                                 </h3>
@@ -57,8 +57,8 @@ const Testimonial = () => {
                     </SwiperSlide>
                 ))
             }
-            <div className="pagination-ref absolute bottom-8 cursor-pointer  z-50 left-1/2 -translate-x-1/2"></div>
-            <div className="flex items-center space-x-2 absolute top-6 right-12 z-10 text-4xl text-slate-100 ">
+            <div className="pagination-ref absolute bottom-8 cursor-pointer left-1/2 -translate-x-1/2 z-30"></div>
+            <div className="flex items-center space-x-2 absolute top-6 right-12 text-4xl text-slate-100 z-30">
                 <div ref={prevElRef} className="hover:text-sky-500">
                     <BsFillArrowLeftCircleFill />
                 </div>

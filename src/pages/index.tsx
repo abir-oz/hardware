@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero/Hero";
 import LatestNews from "../components/LatestNews";
 import LetUsRolling from "../components/LetUsRolling";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/NavBar/NavBar";
 import ProductCarousel from "../components/ProductCarousel/ProductCarousel";
 import TestimonialCarousel from "../components/Testimonials/TestimonialCarousel";
 import WhatWeDo from "../components/WhatWeDo";
@@ -21,7 +21,7 @@ const Home: NextPage = () => {
   return (
     <div className="">
       <Head>
-        <title>Create Next App</title>
+        <title>NKE</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />

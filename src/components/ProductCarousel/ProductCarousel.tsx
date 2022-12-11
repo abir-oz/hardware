@@ -64,7 +64,7 @@ const ProductCarousel = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:w-3/5  lg:h-[37.5rem] w-full">
+                        <div className="lg:w-3/5  lg:h-[30rem] w-full">
                             <Image
                                 src={item.image}
                                 alt={item.title}
@@ -77,7 +77,7 @@ const ProductCarousel = () => {
                 ))}
 
 
-                <div className="flex items-center gap-x-2 absolute top-6 right-12 z-10 text-4xl text-slate-100 ">
+                <div className="flex items-center space-x-2 absolute top-6 right-12 text-4xl text-slate-100 z-20">
                     <div ref={prevRef} className="hover:text-sky-500">
                         <BsFillArrowLeftCircleFill />
                     </div>

@@ -44,9 +44,9 @@ const YoutubeVideos = () => {
                         playing={true}
                     />}
                 </div>
-                <div className="mt-2">
+                <div className="mt-6">
                     <h3 className="text-3xl leading-normal font-semibold text-blue-700">More about NKE Austria and the Fersa Group</h3>
-                    <ul className="columns-2 mt-3">
+                    <ul className="columns-2 mt-6">
                         {
                             moreAboutNke.map((item, index) => (
                                 <li key={index} className="text-slate-700 font-medium py-3 border-t-[1px]">
